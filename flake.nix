@@ -1,7 +1,7 @@
 {
   description = "Bare configuration for a System76 Darter Pro 6";
 
-  inputs.nixpkgs.url = github:NixOS/nixpkgs/2d6cbbe4627f6fe4a179c681537b0a3e4f59b732;
+  inputs.nixpkgs.url = github:NixOS/nixpkgs/b3251e04ee470c20f81e75d5a6080ba92dc7ed3f;
   inputs.system76AcpiDkms.url = github:mwilsoncoding/system76-acpi-dkms-flake/f5b2a0f55985b5b5b004ae74c030db5f2208c3ca;
   inputs.system76IoDkms.url = github:mwilsoncoding/system76-io-dkms-flake/2cb4dd614469a9aa9c5b5cce9c92cef6349ea247;
 
