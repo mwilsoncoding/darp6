@@ -12,7 +12,7 @@
         { pkgs, ... }:
         {
           config = {
-            boot.extraModulePackages = pkgs.system76-acpi-dkms;
+            boot.extraModulePackages = system76AcpiDkms.defaultPackage.x86_64-linux;
         
             # system76_acpi automatically loads on darp6, but system76_io does not.
             # Explicitly load both for consistency.
@@ -23,7 +23,7 @@
         { pkgs, ... }:
         {
           config = {
-            boot.extraModulePackages = pkgs.system76-io-dkms;
+            boot.extraModulePackages = system76IoDkms.defaultPackage.x86_64-linux;
         
             # system76_acpi automatically loads on darp6, but system76_io does not.
             # Explicitly load both for consistency.
