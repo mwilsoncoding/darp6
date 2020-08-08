@@ -11,7 +11,7 @@
       system = "x86_64-linux";
       modules = [
         system76AcpiDkms.nixosModules.system76-acpi-dkms
-        system76IoDkms.nixosModulus.system76-io-dkms
+        system76IoDkms.nixosModules.system76-io-dkms
       ];
     };
   };
