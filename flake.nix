@@ -7,12 +7,29 @@
 
   outputs = { self, nixpkgs, system76AcpiDkms, system76IoDkms }: {
 
-    nixosConfigurations.darp6 = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [
-        system76AcpiDkms.nixosModules.system76-acpi-dkms
-        system76IoDkms.nixosModules.system76-io-dkms
-      ];
+    nixosModules = {
+      system76-acpi-dkms =
+        { pkgs, ... }:
+        {
+          config = {
+            boot.extraModulePackages = pkgs.system76-acpi-dkms;
+        
+            # system76_acpi automatically loads on darp6, but system76_io does not.
+            # Explicitly load both for consistency.
+            boot.kernelModules = [ "system76_acpi" ];
+          };
+        };
+      system76-io-dkms =
+        { pkgs, ... }:
+        {
+          config = {
+            boot.extraModulePackages = pkgs.system76-io-dkms;
+        
+            # system76_acpi automatically loads on darp6, but system76_io does not.
+            # Explicitly load both for consistency.
+            boot.kernelModules = [ "system76_io" ];
+          };
+        };
     };
   };
 }
