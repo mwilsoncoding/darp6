@@ -32,15 +32,32 @@
         "type": "github"
       }
     },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1593540764,
+        "narHash": "sha256-5bwR0L7OOjRnxXkDw556XX0YaP85yKN0KQCP9UAajUI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b3251e04ee470c20f81e75d5a6080ba92dc7ed3f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b3251e04ee470c20f81e75d5a6080ba92dc7ed3f",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
+        "nixpkgs": "nixpkgs",
         "system76AcpiDkms": "system76AcpiDkms",
         "system76IoDkms": "system76IoDkms"
       }
     },
     "system76AcpiDkms": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1596920094,
@@ -59,7 +76,7 @@
     },
     "system76IoDkms": {
       "inputs": {
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "lastModified": 1596920536,
