@@ -10,10 +10,9 @@
 
     nixosModules = {
       compatibleKernel =
-        {system, ...}:
         {
           config = {
-            boot.kernelPackages = (import nixpkgs {inherit system;}).linuxPackages_latest;
+            boot.kernelPackages = (import nixpkgs {system = "x86_64-linux";}).linuxPackages_latest;
           };
         };
       system76AcpiDkms =
