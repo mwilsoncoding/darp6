@@ -60,17 +60,17 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1596920094,
-        "narHash": "sha256-p8wtefw16z8fdcLnT4wW51txGMRqgi8Dar34vYQU9KU=",
+        "lastModified": 1597696633,
+        "narHash": "sha256-kz9cTWJkejFef3Gku/4GEQTttw12m33Vj8U7yno0XOk=",
         "owner": "mwilsoncoding",
         "repo": "system76-acpi-dkms-flake",
-        "rev": "f5b2a0f55985b5b5b004ae74c030db5f2208c3ca",
+        "rev": "03b1d057e3242c2471c0803fcfb913cd121d4c08",
         "type": "github"
       },
       "original": {
         "owner": "mwilsoncoding",
         "repo": "system76-acpi-dkms-flake",
-        "rev": "f5b2a0f55985b5b5b004ae74c030db5f2208c3ca",
+        "rev": "03b1d057e3242c2471c0803fcfb913cd121d4c08",
         "type": "github"
       }
     },
@@ -79,17 +79,17 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1596920536,
-        "narHash": "sha256-YLLPEP8A0ug3M2uNdFEgEuq5UU5/Ig/QFVVM3BZVvoE=",
+        "lastModified": 1597696680,
+        "narHash": "sha256-iaz25bm8DBehHIKK6DkvyOQ+hsxX4ZeNYkp6uvB5JeM=",
         "owner": "mwilsoncoding",
         "repo": "system76-io-dkms-flake",
-        "rev": "40ebd9f6a687f481152333d8c709e2f4c6100e72",
+        "rev": "35dfb74275ff1746ec838bd74f473df0dc7692ea",
         "type": "github"
       },
       "original": {
         "owner": "mwilsoncoding",
         "repo": "system76-io-dkms-flake",
-        "rev": "40ebd9f6a687f481152333d8c709e2f4c6100e72",
+        "rev": "35dfb74275ff1746ec838bd74f473df0dc7692ea",
         "type": "github"
       }
     }
