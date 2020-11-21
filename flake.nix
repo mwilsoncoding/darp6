@@ -2,9 +2,9 @@
   description = "Bare configuration for a System76 Darter Pro 6";
 
   # This nixpkgs must be the same one used to build the system76 packages
-  inputs.nixpkgs.url = github:NixOS/nixpkgs/b3251e04ee470c20f81e75d5a6080ba92dc7ed3f;
-  inputs.system76AcpiDkms.url = github:mwilsoncoding/system76-acpi-dkms-flake/03b1d057e3242c2471c0803fcfb913cd121d4c08;
-  inputs.system76IoDkms.url = github:mwilsoncoding/system76-io-dkms-flake/35dfb74275ff1746ec838bd74f473df0dc7692ea;
+  inputs.nixpkgs.url = github:NixOS/nixpkgs/30d7b9341291dbe1e3361a5cca9052ee1437bc97;
+  inputs.system76AcpiDkms.url = github:mwilsoncoding/system76-acpi-dkms-flake/852e439c314ba22d6cb91192d05653ceeec4198e;
+  inputs.system76IoDkms.url = github:mwilsoncoding/system76-io-dkms-flake/3b78e18cc3fe5af1ef6c7c2c2da73abc64b3ec6e;
 
   outputs = { self, nixpkgs, system76AcpiDkms, system76IoDkms }: {
 
@@ -12,7 +12,7 @@
       compatibleKernel =
         {
           config = {
-            boot.kernelPackages = (import nixpkgs {system = "x86_64-linux";}).linuxPackages_latest;
+            boot.kernelPackages = (import nixpkgs {system = "x86_64-linux";}).linuxPackages_5_8;
           };
         };
       system76AcpiDkms =
